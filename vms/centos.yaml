@@ -30,6 +30,7 @@ items:
         pvc:
           accessModes:
           - ReadWriteMany
+          volumeMode: Block
           resources:
             requests:
               storage: 30Gi
