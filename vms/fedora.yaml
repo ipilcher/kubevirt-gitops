@@ -33,7 +33,7 @@ spec:
             storage: 30Gi
       source:
         pvc:
-          name: fedora
+          name: fedora-3b3fc310abea
           namespace: openshift-virtualization-os-images
   running: true
   template:
@@ -82,6 +82,6 @@ spec:
           userData: |-
             #cloud-config
             user: fedora
-            password: vr3x-xos0-gntb
+            password: redhat
             chpasswd: { expire: False }
         name: cloudinitdisk
