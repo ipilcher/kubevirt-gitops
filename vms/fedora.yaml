@@ -34,7 +34,7 @@ spec:
             storage: 30Gi
       source:
         pvc:
-          name: fedora-3b3fc310abea
+          name: fedora36
           namespace: openshift-virtualization-os-images
   running: true
   template:
