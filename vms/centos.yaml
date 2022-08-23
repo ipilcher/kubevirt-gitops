@@ -16,7 +16,7 @@ items:
         ]
     labels:
       app: centos-gitops1
-      vm.kubevirt.io/template: centos8-server-small
+      vm.kubevirt.io/template: centos-stream8-server-small
       vm.kubevirt.io/template.revision: "1"
       vm.kubevirt.io/template.version: v0.14.0
     name: centos-gitops1
@@ -35,7 +35,7 @@ items:
               storage: 30Gi
         source:
           pvc:
-            name: centos8
+            name: centos-stream8-178796a2fbe3
             namespace: openshift-virtualization-os-images
     running: true
     template:
@@ -84,7 +84,7 @@ items:
             userData: |-
               #cloud-config
               user: centos
-              password: 30jt-pghb-jj0i
+              password: redhat
               chpasswd: { expire: False }
           name: cloudinitdisk
 kind: List
