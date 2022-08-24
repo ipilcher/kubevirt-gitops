@@ -36,7 +36,7 @@ spec:
         pvc:
           name: fedora36
           namespace: openshift-virtualization-os-images
-  running: true
+  running: false
   template:
     metadata:
       annotations:
