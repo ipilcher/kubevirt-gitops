@@ -38,7 +38,7 @@ items:
           pvc:
             name: centos-stream8-178796a2fbe3
             namespace: openshift-virtualization-os-images
-    running: false
+    running: true
     template:
       metadata:
         annotations:
