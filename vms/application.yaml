@@ -2,12 +2,15 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: vms
-  namespace: openshift-gitops
+  #namespace: openshift-gitops
+  namespace: rhte
 spec:
   destination:
-    namespace: kubevirt-gitops
+    #namespace: kubevirt-gitops
+    namespace: rhte
     server: https://kubernetes.default.svc
-  project: default
+  #project: default
+  project: rhte
   source:
     path: vms
     repoURL: https://github.com/ipilcher/kubevirt-gitops.git
