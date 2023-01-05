@@ -9,8 +9,7 @@ spec:
     #namespace: kubevirt-gitops
     namespace: rhte
     server: https://kubernetes.default.svc
-  #project: default
-  project: rhte
+  project: default
   source:
     path: vms
     repoURL: https://github.com/ipilcher/kubevirt-gitops.git
