@@ -68,7 +68,7 @@ items:
             type: pc-q35-rhel8.6.0
           resources:
             requests:
-              memory: 1.5Gi
+              memory: 1536Mi
         evictionStrategy: LiveMigrate
         networks:
         - name: default
